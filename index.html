@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrainement Quotidien</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Entraînement Quotidien</h1>
+        <div id="exercises">
+            <div class="exercise">
+                <input type="checkbox" id="abdos" name="exercises" value="abdos">
+                <label for="abdos">100 Abdos</label>
+            </div>
+            <div class="exercise">
+                <input type="checkbox" id="squats" name="exercises" value="squats">
+                <label for="squats">100 Squats</label>
+            </div>
+            <div class="exercise">
+                <input type="checkbox" id="pompes" name="exercises" value="pompes">
+                <label for="pompes">100 Pompes</label>
+            </div>
+            <div class="exercise">
+                <input type="checkbox" id="gainage" name="exercises" value="gainage">
+                <label for="gainage">1 min de Gainage</label>
+            </div>
+        </div>
+        <div id="timer" class="hidden">
+            <h3>Temps restant avant le prochain entraînement: <span id="time-remaining">24:00:00</span></h3>
+            <button id="reset-button" class="hidden">Recommencer Maintenant</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
